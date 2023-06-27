@@ -6,7 +6,7 @@
 /*   By: mcatal-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/27 13:36:03 by mcatal-d          #+#    #+#             */
-/*   Updated: 2023/06/27 14:16:39 by mcatal-d         ###   ########.fr       */
+/*   Updated: 2023/06/27 14:58:54 by mcatal-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int main()
     easyfind(v, 2);
     easyfind(v, 4);
     
-    std::cout << "---------------------" << std::endl; // Just to separate the outputs
+    std::cout << "---------------------" << std::endl;
     std::cout << "list: " << std::endl;
     
     std::list<int> l;
