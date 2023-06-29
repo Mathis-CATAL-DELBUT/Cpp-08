@@ -6,7 +6,7 @@
 /*   By: mcatal-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/27 15:40:12 by mcatal-d          #+#    #+#             */
-/*   Updated: 2023/06/29 11:58:07 by mcatal-d         ###   ########.fr       */
+/*   Updated: 2023/06/29 12:04:08 by mcatal-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,15 +45,15 @@ void Span::addNumber(int n)
     _n++;
 }
 
-// void Span::addNumbers(std::vector<int> new_elements, int start_add)
-// {
-//     if (_array.size() - start_add + new_elements.size() > _size)
-//         throw OutOfRange();
-//     _array.insert(_array.begin() + start_add, new_elements.begin(), new_elements.end());
-//     if (start_add + new_elements.size() > _n)
-//         _n = start_add + new_elements.size();
-//     std::cout << "value add : " << _array[0] << _array[1] << _array[2] << _array
-// }
+void Span::addNumbers(std::vector<int> new_elements)
+{
+    if (_array.size() + new_elements.size() > _size)
+        throw OutOfRange();
+    _array.insert(_array.begin(), new_elements.begin(), new_elements.end());
+    if (new_elements.size() > _n)
+        _n =  + new_elements.size();
+    std::cout << "value add : " << _array[0] << " " << _array[1]  << " " << _array[2]  << " " << _array[3]  << " " << _array[4] << std::endl;
+}
 
 int Span::shortestSpan() {
     if (_n == 0 || _n == 1)
