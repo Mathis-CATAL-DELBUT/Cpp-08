@@ -6,7 +6,7 @@
 /*   By: mcatal-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/27 15:32:08 by mcatal-d          #+#    #+#             */
-/*   Updated: 2023/06/27 16:52:35 by mcatal-d         ###   ########.fr       */
+/*   Updated: 2023/06/29 11:49:21 by mcatal-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 #include <iostream>
 #include <exception>
 #include <vector>
+#include <algorithm>
 
 class OutOfRange : public std::exception
 {
@@ -32,6 +33,7 @@ class Span
         Span &operator=(Span &copy);
 
         void addNumber(int n);
+        // void addNumbers(std::vector<int> new_elements, int start_add);
         int shortestSpan();
         int longestSpan();
 
